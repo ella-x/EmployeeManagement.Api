@@ -1,0 +1,16 @@
+﻿@*
+   Save Employee's - Company details
+*@
+@{
+}
+<form asp-action="SaveCompanyDetails" method="post">
+    <div>
+        <label for="CompanyName">Company Name</label>
+        <input type="text" name="CompanyName" required />
+    </div>
+    <div>
+        <label for="VatNumber">VAT Number</label>
+        <input type="text" name="VatNumber" required />
+    </div>
+    <button type="submit">Save</button>
+</form>

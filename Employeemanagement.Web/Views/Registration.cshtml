@@ -1,0 +1,20 @@
+﻿@page
+@model Employeemanagement.Web.Models.RegistrationViewModel
+@{
+    ViewData["Title"] = "Registration";
+}
+<form asp-action="Register" method="post">
+    <div>
+        <label for="FirstName">First Name</label>
+        <input asp-for="FirstName" type="text" />
+    </div>
+    <div>
+        <label for="LastName">Last Name</label>
+        <input asp-for="LastName" type="text" />
+    </div>
+    <div>
+        <label for="Email">Email</label>
+        <input asp-for="Email" type="email" />
+    </div>
+    <button type="submit">Register</button>
+</form>
